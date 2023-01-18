@@ -217,7 +217,6 @@
     </context>
 
     <context id="keywords" style-ref="keyword">
-      <keyword>do</keyword>
       <keyword>not</keyword>
       <keyword>or</keyword>
     </context>
