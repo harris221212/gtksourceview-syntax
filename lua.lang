@@ -47,6 +47,7 @@
     <style id="function" name="Function" map-to="def:function"/>
     <style id="keywordsA" name="KeywordsA" map-to="def:keywordsA"/>
     <style id="keywordsB" name="KeywordsB" map-to="def:keywordsB"/>
+    <style id="keywordsC" name="KeywordsC" map-to="def:keywordsC"/>
     <style id="nil-value" name="Nil Constant" map-to="def:special-constant"/>
     <style id="boolean" name="Boolean value" map-to="def:boolean"/>
   </styles>
@@ -243,6 +244,10 @@
       <keyword>local</keyword>
     </context>
 
+    <context id="keywordsC" style-ref="keywordsC">
+      <keyword>require</keyword>
+    </context>
+
     <context id="functions" style-ref="function">
       <keyword>assert</keyword>
       <keyword>bit32\.arshift</keyword>
@@ -349,7 +354,6 @@
       <keyword>rawget</keyword>
       <keyword>rawlen</keyword>
       <keyword>rawset</keyword>
-      <keyword>require</keyword>
       <keyword>select</keyword>
       <keyword>setmetatable</keyword>
       <keyword>string\.byte</keyword>
@@ -442,6 +446,7 @@
         <context ref="functions"/>
         <context ref="keywordsA"/>
         <context ref="keywordsB"/>
+        <context ref="keywordsC"/>
         <context ref="lua-reserved"/>
         <context ref="nil-value"/>
         <context ref="boolean"/>

@@ -103,6 +103,7 @@
   <style name="def:wordsA"        	    foreground="#ADD8E6"/>
   <style name="def:keywordsA"        	    foreground="#C586C0"/>
   <style name="def:keywordsB"        	    foreground="#569CD6"/>
+  <style name="def:keywordsC"        	    foreground="#DCDCAA"/>
   <style name="def:floating-point"          foreground="orange3"/>
 
   <!-- Identifiers -->
