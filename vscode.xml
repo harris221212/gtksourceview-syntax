@@ -61,7 +61,7 @@
   <color name="aluminium6-5-blend"          value="#34393A"/>
 
   <!-- Global Settings -->
-  <style name="text"                        foreground="#9CDCFE" background="#1e1e1e"/>
+  <style name="text"                        foreground="#D4D4D4" background="#1e1e1e"/>
   <style name="selection"                   foreground="aluminium1" background="aluminium4"/>
   <style name="cursor"                      foreground="aluminium2"/>
   <style name="secondary-cursor"            foreground="aluminium4-3-blend"/>
