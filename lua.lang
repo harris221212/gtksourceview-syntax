@@ -48,6 +48,7 @@
     <style id="keywordsA" name="KeywordsA" map-to="def:keywordsA"/>
     <style id="keywordsB" name="KeywordsB" map-to="def:keywordsB"/>
     <style id="keywordsC" name="KeywordsC" map-to="def:keywordsC"/>
+    <style id="keywordsD" name="KeywordsD" map-to="def:keywordsD"/>
     <style id="nil-value" name="Nil Constant" map-to="def:special-constant"/>
     <style id="boolean" name="Boolean value" map-to="def:boolean"/>
   </styles>
@@ -198,7 +199,7 @@
 
 
     <context id="beforeBracket" style-ref="beforeBracket">
-      <match>[a-zA-Z0-9_]*(?=\()</match>
+      <match>[a-zA-Z0-9_]*(?=\(|\{)</match>
     </context>	
     
     <context id="block-comment" style-ref="comment" class="comment" class-disabled="no-spell-check">
@@ -214,11 +215,6 @@
       <include>
 	<context ref="def:in-comment"/>
       </include>
-    </context>
-
-    <context id="keywords" style-ref="keyword">
-      <keyword>not</keyword>
-      <keyword>or</keyword>
     </context>
 
     <context id="keywordsA" style-ref="keywordsA">
@@ -245,6 +241,11 @@
 
     <context id="keywordsC" style-ref="keywordsC">
       <keyword>require</keyword>
+    </context>
+
+    <context id="keywordsD" style-ref="keywordsD">
+      <keyword>not</keyword>
+      <keyword>or</keyword>
     </context>
 
     <context id="functions" style-ref="function">
@@ -441,11 +442,11 @@
         <context ref="bracketsCurlyA"/>
         <context ref="block-comment"/>
         <context ref="line-comment"/>
-        <context ref="keywords"/>
         <context ref="functions"/>
         <context ref="keywordsA"/>
         <context ref="keywordsB"/>
         <context ref="keywordsC"/>
+        <context ref="keywordsD"/>
         <context ref="lua-reserved"/>
         <context ref="nil-value"/>
         <context ref="boolean"/>
