@@ -45,6 +45,7 @@
         <style id="error"                   name="Error"                   map-to="def:error"/>
         <style id="symbolsA" 		    name="symbolsA" 		   map-to="def:symbolsA"/>
         <style id="xmlWord" 		    name="xmlWord" 		   map-to="def:xmlWord"/>
+        <style id="xmlTags" 		    name="xmlTags" 		   map-to="def:xmlTags"/>
     </styles>
 
     <definitions>
@@ -176,8 +177,8 @@
             <start>&lt;(?!/)</start>
             <end>/?&gt;</end>
             <include>
-                <context sub-pattern="0" where="start" style-ref="element-name"/>
-                <context sub-pattern="0" where="end" style-ref="element-name"/>
+                <context sub-pattern="0" where="start" style-ref="xmlTags"/>
+                <context sub-pattern="0" where="end" style-ref="xmlTags"/>
                 <context ref="entity"/>
                 <context ref="character-reference"/>
                 <context ref="unallowed-chars"/>
@@ -195,8 +196,8 @@
             <start>&lt;/</start>
             <end>&gt;</end>
             <include>
-                <context sub-pattern="0" where="start" style-ref="element-name"/>
-                <context sub-pattern="0" where="end" style-ref="element-name"/>
+                <context sub-pattern="0" where="start" style-ref="xmlTags"/>
+                <context sub-pattern="0" where="end" style-ref="xmlTags"/>
                 <context ref="entity"/>
                 <context ref="character-reference"/>
                 <context ref="unallowed-chars"/>
