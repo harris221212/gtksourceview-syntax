@@ -82,102 +82,28 @@
 
 
     <context id="bracketsA" style-ref="bracketsA" class="bracketsA" extend-parent="true">
-      <start>\(</start>
-      <end>\)</end>
+      <start>\(|\{|\[</start>
+      <end>\)|\}|\]</end>
       <include>
      	<context ref="bracketsB"/>
-     	<context ref="bracketsSquareB"/>
-     	<context ref="bracketsCurlyB"/>
 	<context ref="lua"/>
 	<context ref="wordsA"/>
       </include>
     </context>
 
     <context id="bracketsB" style-ref="bracketsB" class="bracketsB" extend-parent="true">
-      <start>\(</start>
-      <end>\)</end>
+      <start>\(|\{|\[</start>
+      <end>\)|\}|\]</end>
       <include>
      	<context ref="bracketsC"/>
-     	<context ref="bracketsSquareC"/>
-     	<context ref="bracketsCurlyC"/>
 	<context ref="lua"/>
 	<context ref="wordsA"/>
       </include>
     </context>
 
     <context id="bracketsC" style-ref="bracketsC" class="bracketsC" extend-parent="true">
-      <start>\(</start>
-      <end>\)</end>
-      <include>
-	<context ref="lua"/>
-	<context ref="wordsA"/>
-      </include>
-    </context>
-
-
-
-    <context id="bracketsSquareA" style-ref="bracketsA" class="bracketsSquareA" extend-parent="true">
-      <start>\[</start>
-      <end>\]</end>
-      <include>
-     	<context ref="bracketsB"/>
-     	<context ref="bracketsSquareB"/>
-     	<context ref="bracketsCurlyB"/>
-	<context ref="lua"/>
-	<context ref="wordsA"/>
-      </include>
-    </context>
-
-    <context id="bracketsSquareB" style-ref="bracketsB" class="bracketsSquareB" extend-parent="true">
-      <start>\[</start>
-      <end>\]</end>
-      <include>
-     	<context ref="bracketsC"/>
-     	<context ref="bracketsSquareC"/>
-     	<context ref="bracketsCurlyC"/>
-	<context ref="lua"/>
-	<context ref="wordsA"/>
-      </include>
-    </context>
-
-    <context id="bracketsSquareC" style-ref="bracketsC" class="bracketsSquareC" extend-parent="true">
-      <start>\[</start>
-      <end>\]</end>
-      <include>
-	<context ref="lua"/>
-	<context ref="wordsA"/>
-      </include>
-    </context>
-
-
-
-    <context id="bracketsCurlyA" style-ref="bracketsA" class="bracketsCurlyA" extend-parent="true">
-      <start>\{</start>
-      <end>\}</end>
-      <include>
-     	<context ref="bracketsB"/>
-     	<context ref="bracketsSquareB"/>
-     	<context ref="bracketsCurlyB"/>
-	<context ref="lua"/>
-	<context ref="wordsA"/>
-      </include>
-    </context>
-
-    <context id="bracketsCurlyB" style-ref="bracketsB" class="bracketsCurlyB" extend-parent="true">
-      <start>\{</start>
-      <end>\}</end>
-      <include>
-     	<context ref="bracketsC"/>
-     	<context ref="bracketsSquareC"/>
-     	<context ref="bracketsCurlyC"/>
-	<context ref="lua"/>
-	<context ref="wordsA"/>
-      </include>
-    </context>
-
-    <context id="bracketsCurlyC" style-ref="bracketsC" class="bracketsCurlyC" extend-parent="true">
-      <start>\{</start>
-      <end>\}</end>
+      <start>\(|\{|\[</start>
+      <end>\)|\}|\]</end>
       <include>
 	<context ref="lua"/>
 	<context ref="wordsA"/>
@@ -438,8 +364,6 @@
         <context ref="beforeBracket"/>
         <context ref="string"/>
         <context ref="bracketsA"/>
-        <context ref="bracketsSquareA"/>
-        <context ref="bracketsCurlyA"/>
         <context ref="block-comment"/>
         <context ref="line-comment"/>
         <context ref="functions"/>
