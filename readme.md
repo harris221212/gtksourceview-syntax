@@ -1,6 +1,6 @@
 # Instructions
 
-To use, copy the `lua.lang` file to `/usr/share/gtksourceview-4/language-specs/lua.lang`, and the `oblivion.xml` file to `/usr/share/gtksourceview-4/styles/oblivion.xml`
+To use, copy the `lua.lang` file to `/usr/share/gtksourceview-4/language-specs/lua.lang`, and the `vscode.xml` file to `/usr/share/gtksourceview-4/styles/oblivion.xml`. Select the `VSCode` theme in a Gedit.
 
 Currently I have only done Lua, but I plan to do: 
 
