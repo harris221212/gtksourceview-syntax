@@ -6,6 +6,7 @@ Currently In Repo:
 
 * Lua
 * XML (WIP)
+* JSON (WIP)
 
 To Do: 
 
@@ -13,7 +14,6 @@ To Do:
 * C
 * Java
 * Javascript
-* JSON
 * HTML
 * CSS
 * Haskell
