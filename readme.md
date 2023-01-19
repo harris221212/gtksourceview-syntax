@@ -7,12 +7,12 @@ To use with the new Gnome-Text-Editor, the files need to go into `gtksourceview-
 Currently In Repo:
 
 * Lua
+* Python3 (WIP)
 * XML (WIP)
 * JSON (WIP)
 
 To Do: 
 
-* Python
 * C
 * Java
 * Javascript
