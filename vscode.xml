@@ -68,7 +68,20 @@
   <style name="current-line"                background="aluminium5"/>
   <style name="line-numbers"                foreground="aluminium5" background="#black"/>
   <style name="draw-spaces"                 foreground="aluminium4"/>
-  <style name="background-pattern"          background="aluminium6-5-"/>
+  <style name="background-pattern"          background="aluminium6-5-blend"/>
+
+
+   <!-- Python -->
+   <style name="python:decorator"          foreground="#dcdcaa"/>
+   <style name="def:keyword"		   foreground="#C586C0"/>
+   <style name="def:keywordsPythonB"	   foreground="#DCDCAA"/>
+   <style name="def:thingTestA"	   	   foreground="#ff0000"/>
+
+
+   <!-- Java -->
+   <style name="def:newJava"	   	   foreground="#C586C0"/>
+   <style name="def:privateJava"	   foreground="#569cd6"/>
+   <style name="def:typesJava"	   	   foreground="#4EC9B0"/>
 
 
 
@@ -93,7 +106,7 @@
   <style name="def:doc-comment-element"     italic="true"/>
 
   <!-- Constants -->
-  <style name="def:constant"                foreground="butter2"/>
+  <style name="def:constant"                foreground="#b5cea8"/>
   <style name="def:string"                  foreground="#CE9178"/>
   <style name="def:special-char"            foreground="orange3"/>
   <style name="def:special-constant"        foreground="#569CD6"/>
